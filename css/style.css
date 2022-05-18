@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Libre Franklin", sans-serif;
+  text-align: center;
+  padding: 5rem 0 2rem;
+  min-height: 100vh;
+}
+@media screen and (min-width: 968px) {
+  body {
+    font-size: 20px;
+  }
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+.section {
+  padding: 0 2rem;
+}
+.section__logo {
+  width: 3.125rem;
+  margin: 0 auto;
+}
+@media screen and (min-width: 968px) {
+  .section__logo {
+    width: 3.75rem;
+  }
+}
+.section__header {
+  font-size: 1.3em;
+  color: hsl(0deg, 0%, 59%);
+  font-weight: 300;
+  letter-spacing: 0.0625rem;
+  margin-top: 2rem;
+}
+.section__header--span {
+  color: hsl(209deg, 33%, 12%);
+  font-weight: 700;
+}
+@media screen and (min-width: 968px) {
+  .section__header {
+    font-size: 1.7em;
+  }
+}
+.section__desc {
+  font-size: 0.8125em;
+  color: hsl(209deg, 33%, 12%);
+  font-weight: 600;
+  opacity: 0.8;
+  margin: 1rem 0;
+}
+.section__img {
+  max-width: 19.375rem;
+  margin: 2rem auto 0;
+}
+@media screen and (min-width: 968px) {
+  .section__img {
+    max-width: 30.625rem;
+  }
+}
+
+.form {
+  margin: 1rem 0 1.5rem;
+  display: inline-flex;
+  flex-direction: column;
+  min-width: 17.5rem;
+  gap: 0.5rem;
+}
+@media screen and (min-width: 968px) {
+  .form {
+    flex-direction: row;
+    position: relative;
+    gap: 0.8rem;
+  }
+}
+.form__input {
+  border: 0.125rem solid hsl(223deg, 100%, 88%);
+  border-radius: 2rem;
+  padding: 0.8em 2em;
+  transition: box-shadow 0.2s;
+}
+@media screen and (min-width: 968px) {
+  .form__input {
+    min-width: 20rem;
+  }
+}
+.form__input:focus {
+  outline: none;
+  box-shadow: 0 0 5px hsl(223deg, 100%, 88%);
+}
+.form__input::-moz-placeholder {
+  color: hsl(223deg, 87%, 63%);
+  opacity: 0.4;
+}
+.form__input:-ms-input-placeholder {
+  color: hsl(223deg, 87%, 63%);
+  opacity: 0.4;
+}
+.form__input::placeholder {
+  color: hsl(223deg, 87%, 63%);
+  opacity: 0.4;
+}
+.form__input.error {
+  border: 0.125rem solid hsl(354deg, 100%, 66%);
+}
+.form__input.error:focus {
+  box-shadow: 0 0 5px hsl(354deg, 100%, 66%);
+}
+.form__input--error {
+  color: hsl(354deg, 100%, 66%);
+  font-style: italic;
+  font-size: 0.6875em;
+  margin-bottom: 1.5rem;
+  display: none;
+}
+@media screen and (min-width: 968px) {
+  .form__input--error {
+    position: absolute;
+    top: 2.8125rem;
+    left: 1.875rem;
+    font-size: 0.6125em;
+  }
+}
+.form__btn {
+  border: 0.125rem solid hsl(223deg, 87%, 63%);
+  background-color: hsl(223deg, 87%, 63%);
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.0625rem;
+  font-size: 0.6125em;
+  padding: 1.2em 3em;
+  border-radius: 2rem;
+  cursor: pointer;
+  box-shadow: 0 0.3125rem 0.625rem hsl(223deg, 100%, 88%);
+  transition: 0.3s;
+}
+@media screen and (min-width: 968px) {
+  .form__btn {
+    padding: 0.7em 3em;
+  }
+}
+.form__btn:hover {
+  opacity: 0.8;
+}
+
+.footer {
+  margin-top: 6rem;
+}
+.footer__socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.footer__social {
+  margin-bottom: 2rem;
+}
+@media screen and (min-width: 968px) {
+  .footer__social {
+    margin-bottom: 1rem;
+  }
+}
+.footer__social--link {
+  color: hsl(223deg, 87%, 63%);
+  font-size: 1.2em;
+  border: 0.0625rem solid hsl(223deg, 100%, 88%);
+  border-radius: 50%;
+  width: 2.1875rem;
+  height: 2.1875rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+@media screen and (min-width: 968px) {
+  .footer__social--link {
+    font-size: 1em;
+  }
+}
+.footer__social--link:hover {
+  background-color: hsl(223deg, 87%, 63%);
+  color: #fff;
+}
+.footer__copyright {
+  font-size: 0.75em;
+  color: hsl(0deg, 0%, 59%);
+  font-weight: 300;
+}
+@media screen and (min-width: 968px) {
+  .footer__copyright {
+    font-size: 0.55em;
+  }
+}/*# sourceMappingURL=style.css.map */

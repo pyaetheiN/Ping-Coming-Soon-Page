@@ -1,0 +1,168 @@
+@use '../abstracts' as *;
+
+.section{
+  padding: 0 2rem;
+
+  &__logo{
+    width: rem(50);
+    margin: 0 auto;
+
+    @include md-min{
+      width: rem(60);
+    }
+  }
+  &__header{
+    font-size: 1.3em;
+    color: $gray;
+    font-weight: 300;
+    letter-spacing: rem(1);
+    margin-top: 2rem;
+
+    &--span{
+      color: $very-dark-blue;
+      font-weight: 700;
+    }
+
+    @include md-min{
+      font-size: 1.7em;
+    }
+  }
+  &__desc{
+    font-size: 0.8125em;
+    color: $very-dark-blue;
+    font-weight: 600;
+    opacity: 0.8;
+    margin: 1rem 0;
+  }
+  &__img{
+    max-width: rem(310);
+    margin: 2rem auto 0;
+
+    @include md-min{
+      max-width: rem(490);
+    }
+  }
+}
+.form{
+  margin: 1rem 0 1.5rem;
+  display: inline-flex;
+  flex-direction: column;
+  min-width: rem(280);
+  gap: 0.5rem;
+
+  @include md-min{
+    flex-direction: row;
+    position: relative;
+    gap: 0.8rem;
+  }
+
+  &__input{
+    border: rem(2) solid $pale-blue;
+    border-radius: 2rem;
+    padding: 0.8em 2em;
+    transition: box-shadow 0.2s;
+
+    @include md-min{
+      min-width: rem(320);
+    }
+    
+    &:focus{
+      outline: none;
+      box-shadow: 0 0 5px $pale-blue;
+    }
+    &::placeholder{
+      color: $blue;
+      opacity: 0.4;
+    }
+    &.error{
+      border: rem(2) solid $light-red;
+
+      &:focus{
+        box-shadow: 0 0 5px $light-red;
+      }
+    }
+    &--error{
+      color: $light-red;
+      font-style: italic;
+      font-size: 0.6875em;
+      margin-bottom: 1.5rem;
+      display: none;
+
+      @include md-min{
+        position: absolute;
+        top: rem(45);
+        left: rem(30);
+        font-size: 0.6125em;
+      }
+    }
+  }
+  &__btn{
+    border: rem(2) solid $blue;
+    background-color: $blue;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: rem(1);
+    font-size: 0.6125em;
+    padding: 1.2em 3em;
+    border-radius: 2rem;
+    cursor: pointer;
+    box-shadow: 0 rem(5) rem(10) $pale-blue;
+    transition: 0.3s;
+
+    @include md-min{
+      padding: 0.7em 3em;
+    }
+
+    &:hover{
+      opacity: 0.8;
+    }
+  }
+}
+.footer{
+  margin-top: 6rem;
+
+  &__socials{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+  &__social{
+    margin-bottom: 2rem;
+
+    @include md-min{
+      margin-bottom: 1rem;
+    }
+
+    &--link{
+      color: $blue;
+      font-size: 1.2em;
+      border: rem(1) solid $pale-blue;
+      border-radius: 50%;
+      width: rem(35);
+      height: rem(35);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: 0.3s;
+
+      @include md-min{
+        font-size: 1em;
+      }
+
+      &:hover{
+        background-color: $blue;
+        color: #fff;
+      }
+    }
+  }
+  &__copyright{
+    font-size: 0.75em;
+    color: $gray;
+    font-weight: 300;
+
+    @include md-min{
+      font-size: 0.55em;
+    }
+  }
+}

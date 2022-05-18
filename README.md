@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: https://www.frontendmentor.io/solutions/ping-coming-soon-page-using-flexbox-AeErqq6z0v
 - Live Site URL: https://pyaethein.github.io/Ping-Coming-Soon-Page/
 
 ## My process
